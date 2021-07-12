@@ -1,5 +1,5 @@
 // write a function factorial which accepts  a number and returns the factorial of the number
-// a facotiral is the product of an integer and all the integers below it
+// a factiral is the product of an integer and all the integers below it
 
 
 function factorial() {
