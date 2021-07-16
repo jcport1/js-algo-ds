@@ -76,6 +76,8 @@ states.includes("Alabama"); //true
 
 const fruits = ["apple", "banana", "pineapple", "cherries"];
 
+//O(n) - linear time complexity, as n grows our time grows
+
 function linearSearch(arr, val) {
   for (i = 0; i < arr.length; i++) {
     if (arr[i] === val) {
