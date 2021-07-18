@@ -58,6 +58,28 @@ function bubbleSortE6(arr) {
   return arr;
 }
 
+//optimized version
+// if we don't make any swaps, we're done and need to break out of loop
+
+function bubbleSortOptimized(arr) {
+  let noSwaps;
+
+  for (let i = arr.length; i > 0; i--) {
+    noSwaps = true;
+    for (let j = 0; j < i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+        noSwaps = false;
+      }
+    }
+    if (noSwaps) break;
+  }
+
+  return arr;
+}
+
 const arr = [5, 12, 6, 34, 4, 17, 15, 7, 13, 33, 8];
 
 bubbleSort(arr);
