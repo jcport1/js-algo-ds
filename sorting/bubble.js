@@ -58,6 +58,10 @@ function bubbleSortE6(arr) {
   return arr;
 }
 
+const arr = [5, 12, 6, 34, 4, 17, 15, 7, 13, 33, 8];
+
+bubbleSortE6(arr);
+
 //optimized version
 // if we don't make any swaps, we're done and need to break out of loop
 
