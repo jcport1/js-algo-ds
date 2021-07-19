@@ -20,13 +20,14 @@ function selectionSort(arr) {
       }
       //swap array values
       //condition to prevent unecessary swap
-      if(i !== lowest) {
+      if (i !== lowest) {
         let temp = arr[i];
         arr[i] = arr[lowest];
         arr[lowest] = temp;
+      }
     }
+    return arr;
   }
-  return arr;
 }
 
 const arr = [15, 3, 6, 2, 10, 8];
