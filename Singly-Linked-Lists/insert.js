@@ -11,6 +11,7 @@ class SinglyLinkedList {
     //doublebang converts value to boolean (true or false)
     if (idx === this.length) return !!this.push(val);
     if (idx === 0) return !!this.unshift(val);
+
     const newNode = new Node(val);
     let prevNode = this.get(val - 1);
     let temp = prevNode.next;
